@@ -1,0 +1,25 @@
+#lo-contents-page .view-filters .views-exposed-widgets .views-exposed-widget .form-type-textfield input.form-text {
+	width: 185px;
+}
+
+#lo-contents-page .view-content .views-row {
+	width: 50%;
+	float: left;
+}
+
+.lo-contents-panel .section_content .view-filters label {
+	display: inline-block;
+	color: white;
+	padding-left: 10px;
+}
+
+.lo-contents-panel .section_content .view-filters .views-exposed-widgets {
+	height: 60px;
+}
+
+@media (min-width: 768px){
+		#lo-contents-page .modal-dialog {
+		    width: 70%;
+		    margin: 3% auto;
+		}
+}
