@@ -3,7 +3,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
-<a id='page-link' target="_blank" class="btn btn-success btn-lg" > Búsqueda Avanzada LO</a>
+<a id='page-link' class="btn btn-success btn-lg" > Búsqueda Avanzada LO</a>
 <a id='window-link' target="_blank" class="btn btn-info btn-lg" >Abrir Página</a>
 
 <script>
@@ -11,7 +11,6 @@
   var subjectArray = {"Lenguaje": "L", "Matemáticas": "M", "Ciencias": "S"};
 
   $( document ).ready(function() {
-      var loContentTitle = (isWordInUrl('node'))? $( "div.title" ).text() : $( "div.views-field.views-field-title .field-content" ).text();
       var loContentGrade = (isWordInUrl('node'))? $( "div.field.field-name-field-grado" ).text() : $( "div.views-field.views-field-field-grado .field-content" ).text();
       var loContentGradeCode = getCode(loContentGrade, gradeArray);
       var loContentSubject = (isWordInUrl('node'))? $( "div.field.field-name-field-asignatura" ).text() : $( "div.views-field.views-field-field-asignatura .field-content" ).text();
@@ -19,7 +18,7 @@
       var loContentCode = (isWordInUrl('node'))? $( "div.field.field-name-field-codigo-lo .field-items" ).text() : $( "div.views-field.views-field-field-codigo-lo .field-content" ).text();
       var urlHost = 'http://contenidosparaaprender.mineducacion.gov.co/';
       var siteUrl = urlHost + loContentGradeCode + '/' + loContentSubjectCode + '/menu_' + loContentCode;
-      console.log(loContentSubject + ' ' + loContentSubjectCode + ', ' + loContentGrade  + ' ' + loContentGradeCode + ', ' + loContentCode + ', url -> ' +siteUrl);
+      //console.log(loContentSubject + ' ' + loContentSubjectCode + ', ' + loContentGrade  + ' ' + loContentGradeCode + ', ' + loContentCode + ', url -> ' +siteUrl);
       var pageUrl = 'http://aprende.colombiaaprende.edu.co/es/contenidoslo';
       pageUrl = (isWordInUrl('/es'))? pageUrl : (isWordInUrl('/en'))? pageUrl.replace("/es", "/en") : pageUrl.replace("/es", "");
       $( "a#page-link" ).attr( "href", pageUrl );
