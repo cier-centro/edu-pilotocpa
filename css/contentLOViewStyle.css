@@ -1,0 +1,32 @@
+#lo-contents-page .view-content .views-row {
+  width: 100%;
+  float: left;
+  padding: 15px;
+}
+
+.lo-contents-panel .content-lo-button-pane {
+	padding: 0 15px;
+}
+
+@media (min-width: 768px){
+		#lo-contents-page .modal-dialog {
+		    width: 70%;
+		    margin: 3% auto;
+		}
+}
+
+@media (max-width: 1024px) {
+
+	#lo-contents-page .view-content .views-row {
+		  width: 100%;
+			text-align: center;
+			margin: 15px 0;
+			padding: 0 10px;
+	}
+
+	.lo-contents-panel .section_container.no_left_sidebar .section_content {
+		 width: 100% !important;
+		 margin: 0 !important;
+		 padding: 0 3% !important;
+	}
+}

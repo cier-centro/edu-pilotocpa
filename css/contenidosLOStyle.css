@@ -39,13 +39,6 @@
 		margin-bottom: 5px;
 }
 
-@media (min-width: 768px){
-		#lo-contents-page .modal-dialog {
-		    width: 70%;
-		    margin: 3% auto;
-		}
-}
-
 @media (max-width: 1024px) {
 	.lo-contents-panel .views-exposed-form .views-exposed-widget.views-submit-button .form-submit,
 	.lo-contents-panel .views-reset-button .form-submit {
