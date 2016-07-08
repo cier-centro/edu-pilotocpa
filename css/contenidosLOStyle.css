@@ -3,8 +3,9 @@
 }
 
 #lo-contents-page .view-content .views-row {
-	width: 50%;
-	float: left;
+	width: 30%;
+  float: left;
+  margin: 15px;
 }
 
 .lo-contents-panel .section_content .view-filters label {
@@ -14,7 +15,28 @@
 }
 
 .lo-contents-panel .section_content .view-filters .views-exposed-widgets {
-	height: 60px;
+	height: auto;
+}
+
+.lo-contents-panel .views-exposed-widgets .views-reset-button {
+	float: right;
+	margin: 0 10px;
+}
+
+.lo-contents-panel .views-exposed-form .views-exposed-widget.views-submit-button .form-submit,
+.lo-contents-panel .views-reset-button .form-submit {
+    width: 90px;
+    height: 31px;
+    margin: 0;
+    border: none;
+    border-radius: 3px;
+    background: none;
+    background-color: #5CACE2;
+    font-size: 14px;
+    font-weight: normal;
+    color: #fff;
+    text-shadow: none;
+		margin-bottom: 5px;
 }
 
 @media (min-width: 768px){
@@ -22,4 +44,28 @@
 		    width: 70%;
 		    margin: 3% auto;
 		}
+}
+
+@media (max-width: 1024px) {
+	.lo-contents-panel .views-exposed-form .views-exposed-widget.views-submit-button .form-submit,
+	.lo-contents-panel .views-reset-button .form-submit {
+		margin-bottom: 0;
+	}
+
+	#lo-contents-page .view-content .views-row {
+		  width: 100%;
+			text-align: center;
+			margin: 15px 0;
+			padding: 0 10px;
+	}
+
+	.lo-contents-panel .section_container.no_left_sidebar .section_content {
+		 width: 100% !important;
+		 margin: 0 !important;
+		 padding: 0 3% !important;
+	}
+
+	.lo-contents-panel .section_content .view-filters label {
+     padding-left: 0;
+	}
 }
