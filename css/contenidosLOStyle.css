@@ -1,16 +1,49 @@
 #lo-contents-page .view-filters .views-exposed-widgets .views-exposed-widget .form-type-textfield input.form-text {
-	width: 185px;
+	width: 160px;
 }
 
-#lo-contents-page .view-content .views-row {
+#lo-contents-page .filter-content-lo .view-content .views-row {
 	width: 30%;
   float: left;
   margin: 15px;
 }
 
+.lo-contents-panel .main_container {
+	background: url('https://dl.dropboxusercontent.com/u/575652037/edu-pilotocpa/images/background-cpa.png') white center center / cover;
+}
+
+.lo-contents-panel .section_content {
+	background: white !important;
+}
+
+.lo-contents-panel .panels-flexible-region-47-center,
+.lo-contents-panel .views-field-field-banner-principal img {
+	width: 100%;
+}
+
+.lo-contents-panel .section_content .view-filters {
+	background: #106472;
+	border: none;
+	margin-left: 2%;
+	width: 96%;
+	border-radius: 0 0 15px 15px;
+}
+.lo-contents-panel .section_content .view-filters label,
+.lo-contents-panel .section_content .view-filters .form-text,
+.lo-contents-panel .section_content .view-filters .form-type-select select,
+.lo-contents-panel .section_content .view-filters .form-type-select option {
+	color: #00DCEC !important;
+}
+
+.lo-contents-panel .section_content .view-filters .form-text,
+.lo-contents-panel .section_content .view-filters .form-type-select select {
+	background: #003947 !important;
+	border: 1px solid #002b39;
+	border-radius: 5px;
+}
+
 .lo-contents-panel .section_content .view-filters label {
 	display: inline-block;
-	color: white;
 	padding-left: 10px;
 }
 
@@ -45,7 +78,7 @@
 		margin-bottom: 0;
 	}
 
-	#lo-contents-page .view-content .views-row {
+	#lo-contents-page .filter-content-lo .view-content .views-row {
 		  width: 100%;
 			text-align: center;
 			margin: 15px 0;
