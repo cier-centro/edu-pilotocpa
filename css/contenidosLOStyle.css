@@ -3,15 +3,76 @@
 }
 
 #lo-contents-page .filter-content-lo .view-content .views-row {
-	width: 30%;
+	width: 31%;
   float: left;
-  margin: 15px;
+  margin: 12px 0 12px 17px;
+  border: 2px solid #E4E4E4;
+  border-radius: 10px;
+  overflow: auto;
+}
+
+.lo-contents-panel .filter-content-lo .views-field-field-imagen-lo {
+  width: 100%;
+  overflow: hidden;
+}
+
+.lo-contents-panel .filter-content-lo .views-field-field-imagen-lo div,
+.lo-contents-panel .filter-content-lo .views-field-field-imagen-lo img {
+	width: 100%;
+	height: auto;
+}
+
+.lo-contents-panel .filter-content-lo .views-field-title {
+	padding: 10px 0;
+  border-bottom: 1px solid #B3B3B1;
+  margin: 0 12px;
+}
+
+.lo-contents-panel .filter-content-lo .views-field-field-nivel div,
+.lo-contents-panel .filter-content-lo .views-field-field-grado a {
+	font-weight: 600;
+}
+
+.lo-contents-panel .filter-content-lo .views-field-field-nivel div {
+	color: #106472;
+}
+
+.lo-contents-panel .filter-content-lo .views-field-field-grado a {
+	color: #FE8A00;
+}
+
+.lo-contents-panel .filter-content-lo .views-field-field-nivel {
+	float: right;
+	margin: 15px 15px 15px 0;
+}
+
+.lo-contents-panel .filter-content-lo .views-field-field-grado {
+	float: left;
+	margin: 15px 0 15px 15px;
+}
+
+.lo-contents-panel .filter-content-lo .views-field-field-asignatura {
+	display: none;
+}
+
+.lo-contents-panel .filter-content-lo .views-field-title a {
+	color: #5B5B5F;
+	font-weight: 700;
+	font-size: 15px;
+}
+
+.lo-contents-panel .section_content .breadcrumb,
+.lo-contents-panel h2.title {
+	height: auto;
+	margin: 0 !important;
 }
 
 .lo-contents-panel .main_container {
 	background: url('https://dl.dropboxusercontent.com/u/575652037/edu-pilotocpa/images/background-cpa.png') white center center / cover;
 }
 
+.lo-contents-panel .section_content .breadcrumb,
+.lo-contents-panel .panels-flexible-region-47-center,
 .lo-contents-panel .section_content {
 	background: white !important;
 }
@@ -28,6 +89,11 @@
 	width: 96%;
 	border-radius: 0 0 15px 15px;
 }
+
+.lo-contents-panel .views-exposed-form {
+	margin-top: -15px;
+}
+
 .lo-contents-panel .section_content .view-filters label,
 .lo-contents-panel .section_content .view-filters .form-text,
 .lo-contents-panel .section_content .view-filters .form-type-select select,
@@ -40,36 +106,83 @@
 	background: #003947 !important;
 	border: 1px solid #002b39;
 	border-radius: 5px;
+	padding: 0 2px;
 }
 
 .lo-contents-panel .section_content .view-filters label {
 	display: inline-block;
 	padding-left: 10px;
+	margin-bottom: 3px;
 }
 
 .lo-contents-panel .section_content .view-filters .views-exposed-widgets {
-	height: auto;
+	height: 100%;
+	padding-bottom: 1%;
 }
 
+.lo-contents-panel .views-exposed-widgets .views-submit-button,
 .lo-contents-panel .views-exposed-widgets .views-reset-button {
-	float: right;
-	margin: 0 10px;
+	float: left;
+	margin: 10px 0 0 7px;
 }
 
 .lo-contents-panel .views-exposed-form .views-exposed-widget.views-submit-button .form-submit,
 .lo-contents-panel .views-reset-button .form-submit {
-    width: 90px;
-    height: 31px;
-    margin: 0;
-    border: none;
-    border-radius: 3px;
-    background: none;
-    background-color: #5CACE2;
-    font-size: 14px;
-    font-weight: normal;
-    color: #fff;
-    text-shadow: none;
-		margin-bottom: 5px;
+  height: 40px !important;
+  margin: 0;
+  border: 1px solid #EF7900;
+  border-radius: 3px;
+  background-color: #FE8A00;
+  font-size: 14px;
+  font-weight: normal;
+  text-shadow: none;
+	margin-bottom: 5px;
+	color: transparent;
+}
+
+.lo-contents-panel .views-exposed-form .views-exposed-widget.views-submit-button .form-submit {
+	background: url('../images/search-icon.png') #FE8A00 no-repeat center center / 25px;
+	width: 40px;
+}
+
+.lo-contents-panel .views-reset-button .form-submit {
+	background: url('../images/clean-icon.png') #FE8A00 no-repeat center center / 70px;
+	width: 80px;
+}
+
+@media (max-width: 767px) {
+	.lo-contents-panel .views-exposed-form .views-exposed-widget.views-submit-button,
+	.lo-contents-panel .views-exposed-form .views-exposed-widget.views-reset-button {
+		width: 44% !important;
+	}
+
+	#lo-contents-page .filter-content-lo .view-content .views-row {
+		width: 75%;
+		text-align: center;
+		margin: 15px 12.5%;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+	.lo-contents-panel .filter-content-lo {
+		margin-top: -15px;
+	}
+
+	.lo-contents-panel .views-exposed-form .views-exposed-widget.views-submit-button,
+	.lo-contents-panel .views-exposed-form .views-exposed-widget.views-reset-button {
+		width: 46% !important;
+	}
+
+	#lo-contents-page .filter-content-lo .view-content .views-row {
+		width: 47%;
+		margin: 12px 0 12px 17px;
+	}
+
+	.lo-contents-panel .filter-content-lo .views-field-title {
+		min-height: 80px;
+		max-height: 100px;
+	  overflow: auto;
+	}
 }
 
 @media (max-width: 1024px) {
@@ -78,20 +191,25 @@
 		margin-bottom: 0;
 	}
 
-	#lo-contents-page .filter-content-lo .view-content .views-row {
-		  width: 100%;
-			text-align: center;
-			margin: 15px 0;
-			padding: 0 10px;
-	}
-
 	.lo-contents-panel .section_container.no_left_sidebar .section_content {
 		 width: 100% !important;
 		 margin: 0 !important;
 		 padding: 0 3% !important;
+		 background: url('https://dl.dropboxusercontent.com/u/575652037/edu-pilotocpa/images/background-cpa.png') white center center / cover !important;
 	}
 
 	.lo-contents-panel .section_content .view-filters label {
      padding-left: 0;
+	}
+}
+@media (min-width: 1025px) {
+	.lo-contents-panel .filter-content-lo .views-field-field-imagen-lo {
+		height: 200px;
+	}
+
+	.lo-contents-panel .filter-content-lo .views-field-title {
+	  min-height: 100px;
+	  max-height: 120px;
+	  overflow: auto;
 	}
 }
