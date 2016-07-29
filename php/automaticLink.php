@@ -3,8 +3,8 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
-<a id='page-link' class="btn btn-success btn-lg" > Búsqueda Avanzada LO</a>
-<a id='window-link' target="_blank" class="btn btn-info btn-lg" >Abrir Página</a>
+<a id='page-link' class="btn btn-warning" > Búsqueda Avanzada LO</a>
+<a id='window-link' target="_blank" class="btn btn-warning" >Abrir Página</a>
 
 <script>
   var gradeArray = {"Primero": "G_1", "Segundo": "G_2", "Tercero": "G_3", "Cuarto": "G_4",  "Quinto": "G_5", "Sexto": "G_6", "Séptimo": "G_7", "Octavo": "G_8", "Noveno": "G_9", "Decimo": "G_10", "Once": "G_11"};
