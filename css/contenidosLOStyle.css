@@ -178,10 +178,17 @@
 		margin: 12px 0 12px 17px;
 	}
 
+	.lo-contents-panel .filter-content-lo .views-field-field-imagen-lo {
+		height: 30vw;
+	}
+
 	.lo-contents-panel .filter-content-lo .views-field-title {
-		min-height: 80px;
-		max-height: 100px;
+		height: 85px;
 	  overflow: auto;
+	}
+
+	.lo-contents-panel .filter-content-lo .views-field-field-imagen-lo div, .lo-contents-panel .filter-content-lo .views-field-field-imagen-lo img {
+		height: 100%;
 	}
 }
 
