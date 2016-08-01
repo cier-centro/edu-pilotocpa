@@ -1,5 +1,7 @@
 <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" />
 <link rel="stylesheet" href="https://e0ac8878a7eddbffe6e3b036d9e75ee76d610c31.googledrive.com/host/0B29NQUZTblLrVWRaejZ5RTNXTmM">
+<link rel="stylesheet" href="https://dl.dropboxusercontent.com/u/575652037/edu-pilotocpa/css/contenidosLOStyle.css">
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
