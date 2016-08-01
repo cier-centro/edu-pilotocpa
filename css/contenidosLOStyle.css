@@ -263,7 +263,7 @@
 
 @media (max-width: 899px) {
 	.lo-contents-panel .lo-info .views-field-field-imagen-lo {
-		margin-top: 20px; 
+		margin-top: 20px;
 	}
 	.lo-contents-panel .lo-info .view-contenidos-lo .views-field {
 		display: block;
@@ -278,7 +278,8 @@
 		overflow: auto;
 	}
 
-	.lo-contents-panel .lo-info .fivestar-widget-5 > div {
+	.lo-contents-panel .lo-info .fivestar-widget-5 > div,
+	.lo-contents-panel .lo-info .fivestar-widget-static-5 > div {
 		display: inline-block;
 		float: none;
 	}
