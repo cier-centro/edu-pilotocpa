@@ -206,9 +206,11 @@
   width: 48% !important;
 }
 
-.lo-contents-panel .lo-info .views-field-field-asignatura a {
+.lo-contents-panel .lo-info .views-field-field-asignatura a,
+.node-type-contenidos-lo .sub_content .field-name-field-asignatura a {
 	font-weight: 600;
 }
+
 .lo-contents-panel .lo-info .views-field-field-nivel .field-content,
 .lo-contents-panel .lo-info .views-field-field-grado .field-content,
 .lo-contents-panel .lo-info .views-field-field-asignatura .field-content {
