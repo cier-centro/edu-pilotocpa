@@ -242,6 +242,10 @@
 	text-decoration: none !important;
 }
 
+.node-type-contenidos-lo .section_content .region .title {
+	margin-top: 15px;
+}
+
 .node-type-contenidos-lo .node-contenidos-lo {
 	padding: 0 20px;
 }

@@ -19,9 +19,9 @@
 
   $( document ).ready(function() {
     setLOUrl($( "a#window-link" ));
-    setColorBySubject (loContentSubjectElement);
+    setColorBySubject(loContentSubjectElement);
     setHomeUrl($( "a#page-link" ));
-     $( "a#window-link" ).clone().insertBefore( $( ".modal-footer button" ) );
+    putExtraElements();
   });
 
   function setLOUrl(loButton) {
@@ -35,7 +35,7 @@
     return buildLOUrlFromStrings(loContentGrade, loContentSubjectElement.text(), loContentCode);
   }
 
-  function buildLOUrlFromStrings (grade, subject, code) {
+  function buildLOUrlFromStrings(grade, subject, code) {
     var gradeCode = getCode(grade, gradeArray);
     var subjectCode = getCode(subject, subjectArray);
     var url = urlLOHost + gradeCode + '/' + subjectCode + '/menu_' + code;
@@ -51,7 +51,7 @@
     return code;
   }
 
-  function setColorBySubject (subjectLabel) {
+  function setColorBySubject(subjectLabel) {
     var colorLO = getCode(subjectLabel.text(), colorArray);
     colorLO = (colorLO == 'No_found')? '#6C91D7' : colorLO;
     $( subjectLabel ).css( "color", colorLO );
@@ -63,7 +63,13 @@
   }
 
   function isWordInUrl(word) {
-     return window.location.href.includes(word);
+    return window.location.href.includes(word);
+  }
+
+  function putExtraElements() {
+    $( "a#window-link" ).clone().insertBefore( $( ".modal-footer button" ) );
+    var nodeBanner = '<img alt="" title="Default image" src="http://aprende.colombiaaprende.edu.co/sites/default/files/naspublic/banner_cpa.png" width="100%" height="auto">';
+    $(nodeBanner).insertBefore( $( ".node-type-contenidos-lo .region-section-content" ) );
   }
 
 </script>
