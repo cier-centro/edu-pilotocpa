@@ -21,6 +21,7 @@
     setLOUrl($( "a#window-link" ));
     setColorBySubject (loContentSubjectElement);
     setHomeUrl($( "a#page-link" ));
+     $( "a#window-link" ).clone().insertBefore( $( ".modal-footer button" ) );
   });
 
   function setLOUrl(loButton) {

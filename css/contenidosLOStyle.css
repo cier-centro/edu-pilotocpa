@@ -229,14 +229,14 @@
   text-align: right;
 }
 
-.lo-contents-panel .lo-info .btn-warning,
+.lo-contents-panel .btn-warning,
 .node-type-contenidos-lo .btn-warning{
 	border: 1px solid #EF7900;
 	background-color: #FE8A00;
 	color: white !important;
 }
 
-.lo-contents-panel .lo-info .btn-warning:hover,
+.lo-contents-panel .btn-warning:hover,
 .node-type-contenidos-lo .btn-warning:hover {
 	background-color: #D07100;
 	text-decoration: none !important;
