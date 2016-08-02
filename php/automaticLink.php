@@ -5,8 +5,8 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
-<a id='page-link' class="btn btn-warning" > Búsqueda Avanzada LO</a>
-<a id='window-link' target="_blank" class="btn btn-warning" >Abrir Página</a>
+<a id='page-link' class="btn btn-warning" >Volver a buscar contenidos</a>
+<a id='window-link' target="_blank" class="btn btn-warning" >Ver en página completa</a>
 
 <script>
   var urlLOHost = 'http://contenidosparaaprender.mineducacion.gov.co/';
