@@ -217,6 +217,16 @@
 	display: inline-block;
 }
 
+.lo-contents-panel .view-footer {
+	width: 378px;
+	border-top: 1px dashed #B2B2B2;
+	text-align: center;
+	margin: auto;
+	color: #919191;
+	padding: 5px;
+	font-weight: 500;
+}
+
 .lo-contents-panel .lo-info .views-field-field-dba .field-content,
 .node-type-contenidos-lo .sub_content .field-name-field-dba .field-item{
 	white-space: pre-line;
