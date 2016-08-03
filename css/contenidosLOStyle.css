@@ -84,7 +84,7 @@
 
 .lo-contents-panel .section_content > div,
 .node-type-contenidos-lo .section_content > div {
-	overflow: auto;
+	overflow: visible;
 	border-radius: 0;
 }
 
@@ -142,6 +142,11 @@
 	margin: 10px 0 0 7px;
 }
 
+.lo-contents-panel .views-exposed-widgets .views-submit-button {
+	position: relative !important;
+	overflow: visible !important;
+}
+
 .lo-contents-panel .views-exposed-form .views-exposed-widget.views-submit-button .form-submit,
 .lo-contents-panel .views-reset-button .form-submit {
   height: 40px !important;
@@ -159,6 +164,25 @@
 .lo-contents-panel .views-exposed-form .views-exposed-widget.views-submit-button .form-submit {
 	background: url('../images/search-icon.png') #FE8A00 no-repeat center center / 25px;
 	width: 40px;
+}
+
+.lo-contents-panel .views-exposed-widget.views-submit-button:after {
+	content: "Buscar";
+	position: absolute;
+  background: #003947;
+  color: #00DCE4;
+  border: 1px solid #002B39;
+  padding: 1px 5px;
+	left: 50%;
+	top: 100%;
+	visibility: hidden;
+	opacity: 0;
+  transition: visibility 0s, opacity 0.2s linear;
+}
+
+.lo-contents-panel .views-exposed-widget.views-submit-button:hover:after  {
+	visibility: visible;
+	opacity: 1;
 }
 
 .lo-contents-panel .views-reset-button .form-submit {
@@ -456,6 +480,11 @@
 
 	.lo-contents-panel .section_content .view-filters label {
      padding-left: 0;
+	}
+
+	.lo-contents-panel .views-exposed-widget.views-submit-button:after {
+		left: 80%;
+		top: -70%;
 	}
 }
 
