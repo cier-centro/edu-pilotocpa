@@ -296,10 +296,6 @@
 	line-height: 1 !important;
 }
 
-.node-type-contenidos-lo .info .view {
-	padding: 0 10px;
-}
-
 .node-type-contenidos-lo .info .share_content {
 	float: right;
   position: relative;
@@ -309,7 +305,9 @@
 	background: url('http://aprende.colombiaaprende.edu.co/sites/all/themes/aprende/images/i_create.gif') left 0 no-repeat !important;
 }
 
-.node-type-contenidos-lo .user_image {
+.node-type-contenidos-lo .user_image,
+.node-type-contenidos-lo .user_name,
+.node-type-contenidos-lo .info .comment {
 	display: none !important;
 }
 
@@ -363,6 +361,12 @@
 
 	.node-type-contenidos-lo .author_info .user_name .name span {
 		padding-left: 0;
+	}
+
+	.node-type-contenidos-lo .info .list.share_content	{
+		float: right !important;
+		overflow: visible;
+		width: auto !important;
 	}
 }
 
@@ -494,8 +498,7 @@
 	}
 
 	.lo-contents-panel .filter-content-lo .views-field-title {
-	  min-height: 100px;
-	  max-height: 120px;
+	  height: 90px;
 	  overflow: auto;
 	}
 }

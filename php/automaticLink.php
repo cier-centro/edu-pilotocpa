@@ -5,6 +5,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
+<a id='download-link' class="btn btn-warning" >Descargar contenido</a>
 <a id='page-link' class="btn btn-warning" >Volver a buscar contenidos</a>
 <a id='window-link' target="_blank" class="btn btn-warning" >Ver en página completa</a>
 
@@ -18,6 +19,7 @@
   var loContentSubjectElement = (isWordInUrl('node'))? $( "div.field.field-name-field-asignatura a" ) : $( "div.views-field.views-field-field-asignatura .field-content a" ) ;
 
   $( document ).ready(function() {
+    setLOUrl($( "a#download-link" ));
     setLOUrl($( "a#window-link" ));
     setColorBySubject(loContentSubjectElement);
     setHomeUrl($( "a#page-link" ));
@@ -25,22 +27,23 @@
   });
 
   function setLOUrl(loButton) {
-    var siteUrl = getLOUrl();
+    var siteUrl = getLOUrl(loButton.selector);
     loButton.attr( "href", siteUrl );
   }
 
-  function getLOUrl() {
+  function getLOUrl(loButtonTag) {
     var loContentGrade = (isWordInUrl('node'))? $( "div.field.field-name-field-grado" ).text() : $( "div.views-field.views-field-field-grado .field-content" ).text();
     var loContentCode = (isWordInUrl('node'))? $( "div.field.field-name-field-codigo-lo .field-items" ).text() : $( "div.views-field.views-field-field-codigo-lo .field-content" ).text();
-    return buildLOUrlFromStrings(loContentGrade, loContentSubjectElement.text(), loContentCode);
+    return buildLOUrlFromStrings(loContentGrade, loContentSubjectElement.text(), loContentCode, loButtonTag);
   }
 
-  function buildLOUrlFromStrings(grade, subject, code) {
+  function buildLOUrlFromStrings(grade, subject, code, buttonTag) {
     var gradeCode = getCode(grade, gradeArray);
     var subjectCode = getCode(subject, subjectArray);
     var url = urlLOHost + gradeCode + '/' + subjectCode + '/menu_' + code;
-    //console.log(subject + ' ' + subjectCode + ', ' + grade  + ' ' + gradeCode + ', ' + code + ', url -> ' + url);
-    return url;
+    var url2 = urlLOHost + "CPA_descargables/" + gradeCode + '/' + subjectCode + "/" + code + ".zip";
+    //console.log(subject + ' ' + subjectCode + ', ' + grade  + ' ' + gradeCode + ', ' + code + ', url -> ' + url + ', url 2-> ' + url2);
+    return (buttonTag == "a#window-link")? url : (buttonTag == "a#download-link")? url2 : "";
   }
 
   function getCode(comparingText, valuesArray ) {
