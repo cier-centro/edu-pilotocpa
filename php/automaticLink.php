@@ -79,8 +79,8 @@
 
   function hideButtonWhenLogout (buttonUrl) {
     var logoutButtonUrl = $( ".top_menu .logout a" ).attr( 'href' );
-    if ( (isWordInLink(buttonUrl, '/G_6/')) {
-      if (isWordInLink(logoutButtonUrl, 'logout')) ) {
+    if (isWordInLink(buttonUrl, '/G_6/')) {
+      if (isWordInLink(logoutButtonUrl, 'logout')) {
         $(downloadButton).insertBefore( $( "a#page-link" ) );
       }
       else {
