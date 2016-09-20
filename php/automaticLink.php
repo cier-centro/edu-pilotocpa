@@ -5,7 +5,6 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
-<a id='download-link' class="btn btn-warning" >Descargar contenido</a>
 <a id='page-link' class="btn btn-warning" >Volver a buscar contenidos</a>
 <a id='window-link' target="_blank" class="btn btn-warning" >Ver en página completa</a>
 
@@ -17,13 +16,16 @@
   var colorArray = {"Lenguaje": "#C7716C", "Matemáticas": "#56B4C0", "Ciencias": "#78AC84"};
 
   var loContentSubjectElement = (isWordInUrl('node'))? $( "div.field.field-name-field-asignatura a" ) : $( "div.views-field.views-field-field-asignatura .field-content a" ) ;
+  var downloadButton = '<a id="download-link" class="btn btn-warning" >Descargar contenido</a>';
+  var downloadLabel = '<label id="download-msg" class="col-xs-12">Para descargar este contenido ingrese con su usuario y clave</label>';
 
   $( document ).ready(function() {
-    setLOUrl($( "a#download-link" ));
     setLOUrl($( "a#window-link" ));
     setColorBySubject(loContentSubjectElement);
     setHomeUrl($( "a#page-link" ));
     putExtraElements();
+    hideButtonWhenLogout (getLOUrl( "a#download-link" ));
+    setLOUrl($( "a#download-link" ));
   });
 
   function setLOUrl(loButton) {
@@ -73,6 +75,22 @@
     $( "a#window-link" ).clone().insertBefore( $( ".modal-footer button" ) );
     var nodeBanner = '<img alt="" title="Default image" src="http://aprende.colombiaaprende.edu.co/sites/default/files/naspublic/banner_cpa.png" width="100%" height="auto">';
     $(nodeBanner).insertBefore( $( ".node-type-contenidos-lo .region-section-content" ) );
+  }
+
+  function hideButtonWhenLogout (buttonUrl) {
+    var logoutButtonUrl = $( ".top_menu .logout a" ).attr( 'href' );
+    if ( (isWordInLink(buttonUrl, '/G_6/')) {
+      if (isWordInLink(logoutButtonUrl, 'logout')) ) {
+        $(downloadButton).insertBefore( $( "a#page-link" ) );
+      }
+      else {
+        $(downloadLabel).insertBefore( $( "a#page-link" ) );
+      }
+    }
+  }
+
+  function isWordInLink(url, word) {
+    return (url!=null)? url.includes(word) : false;
   }
 
 </script>

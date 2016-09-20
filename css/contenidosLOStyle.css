@@ -263,6 +263,17 @@
   text-align: right;
 }
 
+.lo-contents-panel .lo-info .views-field-field-enlace #download-link,
+.node-type-contenidos-lo .sub_content .field-name-field-enlace #download-link {
+	margin-right: 4px;
+}
+
+.lo-contents-panel .lo-info .views-field-field-enlace label,
+.node-type-contenidos-lo .sub_content .field-name-field-enlace label {
+  color: #FE8A00;
+	padding: 0;
+}
+
 .lo-contents-panel .btn-warning,
 .node-type-contenidos-lo .btn-warning{
 	border: 1px solid #EF7900;
