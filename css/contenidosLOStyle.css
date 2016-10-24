@@ -70,7 +70,7 @@
 
 .lo-contents-panel .main_container,
 .node-type-contenidos-lo .main_container {
-	background: url('https://dl.dropboxusercontent.com/u/575652037/edu-pilotocpa/images/background-cpa.png') white center center / cover;
+	background: url('../images/background-cpa.png') white center center / cover;
 	display: inline-block;
 }
 
@@ -490,7 +490,7 @@
 		 width: 100% !important;
 		 margin: 0 !important;
 		 padding: 0 3% !important;
-		 background: url('https://dl.dropboxusercontent.com/u/575652037/edu-pilotocpa/images/background-cpa.png') white center center / cover !important;
+		 background: url('../images/background-cpa.png') white center center / cover !important;
 	}
 
 	.lo-contents-panel .section_content .view-filters label {
