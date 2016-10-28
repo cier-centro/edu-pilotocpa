@@ -9,7 +9,7 @@
 <a id='window-link' target="_blank" class="btn btn-warning" >Ver en página completa</a>
 
 <script>
-  var urlLOHost = 'http://contenidosparaaprender.mineducacion.gov.co/';
+  var urlLOHost = 'http://aprende.colombiaaprende.edu.co/sites/default/files/naspublic/ContenidosAprender/';
   var pageHomeUrl = 'http://aprende.colombiaaprende.edu.co/es/contenidoslo';
   var gradeArray = {"Primero": "G_1", "Segundo": "G_2", "Tercero": "G_3", "Cuarto": "G_4",  "Quinto": "G_5", "Sexto": "G_6", "Séptimo": "G_7", "Octavo": "G_8", "Noveno": "G_9", "Decimo": "G_10", "Once": "G_11"};
   var subjectArray = {"Lenguaje": "L", "Matemáticas": "M", "Ciencias": "S"};
@@ -42,7 +42,7 @@
   function buildLOUrlFromStrings(grade, subject, code, buttonTag) {
     var gradeCode = getCode(grade, gradeArray);
     var subjectCode = getCode(subject, subjectArray);
-    var url = urlLOHost + gradeCode + '/' + subjectCode + '/menu_' + code;
+    var url = urlLOHost + gradeCode + '/' + subjectCode + '/menu_' + code + '/index.html';
     var url2 = urlLOHost + "CPA_descargables/" + gradeCode + '/' + subjectCode + "/" + code + ".zip";
     //console.log(subject + ' ' + subjectCode + ', ' + grade  + ' ' + gradeCode + ', ' + code + ', url -> ' + url + ', url 2-> ' + url2);
     return (buttonTag == "a#window-link")? url : (buttonTag == "a#download-link")? url2 : "";
@@ -79,7 +79,7 @@
 
   function hideButtonWhenLogout (buttonUrl) {
     var logoutButtonUrl = $( ".top_menu .logout a" ).attr( 'href' );
-    if (isWordInLink(buttonUrl, '/G_6/')) {
+    if (isWordInLink(buttonUrl, '/G_0/')) {
       if (isWordInLink(logoutButtonUrl, 'logout')) {
         $(downloadButton).insertBefore( $( "a#page-link" ) );
       }
