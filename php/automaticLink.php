@@ -1,16 +1,23 @@
 <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" />
 <link rel="stylesheet" href="http://52.37.84.217/edu-pilotocpa/css/condensed-fix.css">
-<link rel="stylesheet" href="http://52.37.84.217/edu-pilotocpa/css/contenidosLOStyle.css">
+<link rel="stylesheet" href="https://dl.dropboxusercontent.com/u/575652037/edu-pilotocpa/css/contenidosLOStyle.css">
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
+<div class="info-links">
+    <a id='credits-link' target="_blank" class="btn btn-link" >Créditos</a>
+    <a id='copyright-link' target="_blank" class="btn btn-link" >Derechos de Autor</a>
+</div>
 <a id='page-link' class="btn btn-warning" >Volver a buscar contenidos</a>
 <a id='window-link' target="_blank" class="btn btn-warning" >Ver en página completa</a>
 
 <script>
   var urlLOHost = 'http://aprende.colombiaaprende.edu.co/sites/default/files/naspublic/ContenidosAprender/';
   var pageHomeUrl = 'http://aprende.colombiaaprende.edu.co/es/contenidoslo';
+  var creditsUrl = urlLOHost + 'creditos/index.html';
+  var copyrightUrl = urlLOHost + 'derechos/index.html';
+
   var gradeArray = {"Primero": "G_1", "Segundo": "G_2", "Tercero": "G_3", "Cuarto": "G_4",  "Quinto": "G_5", "Sexto": "G_6", "Séptimo": "G_7", "Octavo": "G_8", "Noveno": "G_9", "Decimo": "G_10", "Once": "G_11"};
   var subjectArray = {"Lenguaje": "L", "Matemáticas": "M", "Ciencias": "S"};
   var colorArray = {"Lenguaje": "#C7716C", "Matemáticas": "#56B4C0", "Ciencias": "#78AC84"};
@@ -23,6 +30,8 @@
     setLOUrl($( "a#window-link" ));
     setColorBySubject(loContentSubjectElement);
     setHomeUrl($( "a#page-link" ));
+    setUrl($( "a#credits-link" ), creditsUrl);
+    setUrl($( "a#copyright-link" ), copyrightUrl);
     putExtraElements();
     hideButtonWhenLogout (getLOUrl( "a#download-link" ));
     setLOUrl($( "a#download-link" ));
@@ -65,6 +74,10 @@
   function setHomeUrl(homeButton) {
     pageHomeUrl = (isWordInUrl('/es'))? pageHomeUrl : (isWordInUrl('/en'))? pageHomeUrl.replace("/es", "/en") : pageHomeUrl.replace("/es", "");
     homeButton.attr( "href", pageHomeUrl );
+  }
+
+  function setUrl(button, url) {
+    button.attr( "href", url );
   }
 
   function isWordInUrl(word) {
