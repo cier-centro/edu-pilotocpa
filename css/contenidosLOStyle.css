@@ -258,8 +258,8 @@
 	white-space: pre-line;
 }
 
-.lo-contents-panel .lo-info .views-field-field-enlace,
-.node-type-contenidos-lo .sub_content .field-name-field-enlace {
+.lo-contents-panel .lo-info .views-field-field-enlace-opcional,
+.node-type-contenidos-lo .sub_content .field-name-field-enlace-opcional {
 	width: 100% !important;
   padding: 20px !important;
   text-align: right;
@@ -279,13 +279,13 @@
 	float: left;
 }
 
-.lo-contents-panel .lo-info .views-field-field-enlace #download-link,
-.node-type-contenidos-lo .sub_content .field-name-field-enlace #download-link {
+.lo-contents-panel .lo-info .views-field-field-enlace-opcional #download-link,
+.node-type-contenidos-lo .sub_content .field-name-field-enlace-opcional #download-link {
 	margin-right: 4px;
 }
 
-.lo-contents-panel .lo-info .views-field-field-enlace label,
-.node-type-contenidos-lo .sub_content .field-name-field-enlace label {
+.lo-contents-panel .lo-info .views-field-field-enlace-opcional label,
+.node-type-contenidos-lo .sub_content .field-name-field-enlace-opcional label {
   color: #FE8A00;
 	padding: 0;
 }
@@ -362,7 +362,7 @@
 	padding: 5px 0 0;
 }
 
-.node-type-contenidos-lo .sub_content .field-name-field-enlace .field-item {
+.node-type-contenidos-lo .sub_content .field-name-field-enlace-opcional .field-item {
 	float: none !important;
 }
 
@@ -477,13 +477,13 @@
 		margin: 15px 0 25px;
 	}
 
-	.lo-contents-panel .lo-info .views-field.views-field-field-enlace {
+	.lo-contents-panel .lo-info .views-field.views-field-field-enlace-opcional {
 		padding: 0 2.5% 20px !important;
 		margin-left: 2.5%;
 		width: 95% !important;
 	}
 
-	.node-type-contenidos-lo .sub_content .field-name-field-enlace {
+	.node-type-contenidos-lo .sub_content .field-name-field-enlace-opcional {
 		padding: 20px 0 !important;
 	}
 
