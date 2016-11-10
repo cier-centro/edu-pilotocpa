@@ -24,7 +24,7 @@ $( document ).ready(function() {
     $( "div.modal-header .modal-title" ).html( loContentTitle );
     $( "iframe.lo-content" ).attr( "src", contentUrl );
     var $openContent= '<button type="button" class="btn btn-warning" data-toggle="modal" data-target="#myModal" onclick="setTimeout(function() {resizeIframes();}, 500)" >Ver contenido</button>';
-    $( 'div.views-field.views-field-field-enlace div.field-content' ).append ( $openContent );
+    $( 'div.views-field.views-field-field-enlace-opcional div.field-content' ).append ( $openContent );
 });
 
 window.onresize = function(event) {
