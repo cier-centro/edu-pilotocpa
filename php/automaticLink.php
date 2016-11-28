@@ -1,6 +1,6 @@
 <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" />
 <link rel="stylesheet" href="http://52.37.84.217/edu-pilotocpa/css/condensed-fix.css">
-<link rel="stylesheet" href="https://dl.dropboxusercontent.com/u/575652037/edu-pilotocpa/css/contenidosLOStyle.css">
+<link rel="stylesheet" href="http://52.37.84.217/edu-pilotocpa/css/contenidosLOStyle.css">
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
@@ -92,13 +92,11 @@
 
   function hideButtonWhenLogout (buttonUrl) {
     var logoutButtonUrl = $( ".top_menu .logout a" ).attr( 'href' );
-    if (isWordInLink(buttonUrl, '/G_0/')) {
-      if (isWordInLink(logoutButtonUrl, 'logout')) {
-        $(downloadButton).insertBefore( $( "a#page-link" ) );
-      }
-      else {
-        $(downloadLabel).insertBefore( $( "a#page-link" ) );
-      }
+    if (isWordInLink(logoutButtonUrl, 'logout')) {
+      $(downloadButton).insertBefore( $( "a#page-link" ) );
+    }
+    else {
+      $(downloadLabel).insertBefore( $( "a#page-link" ) );
     }
   }
 
