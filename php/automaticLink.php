@@ -92,12 +92,14 @@
 
   function hideButtonWhenLogout (buttonUrl) {
     var logoutButtonUrl = $( ".top_menu .logout a" ).attr( 'href' );
-    if (isWordInLink(logoutButtonUrl, 'logout')) {
-      $(downloadButton).insertBefore( $( "a#page-link" ) );
-    }
-    else {
-      $(downloadLabel).insertBefore( $( "a#page-link" ) );
-    }
+    //if (isWordInLink(buttonUrl, '/G_1/') && isWordInLink(buttonUrl, '/G_11/')) {
+        if (isWordInLink(logoutButtonUrl, 'logout')) {
+          $(downloadButton).insertBefore( $( "a#page-link" ) );
+        }
+        else {
+          $(downloadLabel).insertBefore( $( "a#page-link" ) );
+        }
+    //}
   }
 
   function isWordInLink(url, word) {
