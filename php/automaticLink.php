@@ -8,6 +8,7 @@
 <div class="info-links">
     <a id='credits-link' target="_blank" class="btn btn-link" >Créditos</a>
     <a id='copyright-link' target="_blank" class="btn btn-link" >Derechos de Autor</a>
+    <a id="help-link" target="_blank" class="btn btn-link" href="javascript:void(0)">Ayuda</a>
 </div>
 <a id='page-link' class="btn btn-warning" >Volver a buscar contenidos</a>
 <a id='window-link' target="_blank" class="btn btn-warning" >Ver en página completa</a>
